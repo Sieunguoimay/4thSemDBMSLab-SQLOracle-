@@ -7,9 +7,15 @@ grant connect,resource to <user_name>;
 
 SELECT table_name FROM user_tables;
 
-
 - To modify some constraints of a column using:
 	SQL> alter table employee modify foreign key(dno) references Department(dnumber);
 
-- Question 14:
-	https://drive.google.com/file/d/1buo3LT8EeNTXvnrofGmNaU_uE6OxMcAh/view
+SQL> select Department.* from Department, Dept_locations where department.Dnumber = Dept_locations.Dnumber order by Dept_locations.Dlocation;
+
+   DNUMBER DNAME           MGR_SSN   MGR_START
+---------- --------------- --------- ---------
+         5 Research        333445555 22-MAY-88
+         5 Research        333445555 22-MAY-88
+         1 Headquarters    888665555 19-JUN-81
+         4 Administration  987654321 01-JAN-95
+         5 Research        333445555 22-MAY-88
