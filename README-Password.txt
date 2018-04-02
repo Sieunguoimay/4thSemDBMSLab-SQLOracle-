@@ -19,3 +19,5 @@ SQL> select Department.* from Department, Dept_locations where department.Dnumbe
          1 Headquarters    888665555 19-JUN-81
          4 Administration  987654321 01-JAN-95
          5 Research        333445555 22-MAY-88
+
+On 16/04/2018, there will be viva.
